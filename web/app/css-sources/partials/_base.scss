@@ -1,0 +1,33 @@
+// imports for all mixins + global project variables
+
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+@mixin translate($x, $y) {
+   @include transform(translate($x, $y));
+}
+@mixin translateY($y) {
+   @include transform(translateY($y));
+}
+@mixin translateX($x) {
+   @include transform(translateX($x));
+}
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+@import "../modules/all";

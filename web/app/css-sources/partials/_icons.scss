@@ -1,0 +1,87 @@
+
+
+.icon-big {
+  width: $distance-f*3;
+  vertical-align: middle;
+}
+
+.icon-medium {
+  width: $distance-e;
+  vertical-align: middle;
+}
+
+.icon-small {
+  width: $distance-b;
+  vertical-align: middle;
+}
+
+.icon-link {
+  display: inline-block;
+  padding: 30px;
+  fill: $color-link;
+  border-radius: 5px;
+}
+
+.icon-link:link {
+  text-decoration: none;
+  fill: $color-link;
+}
+
+.icon-link:hover {
+  text-decoration: none;
+  fill: $color-link-hover;
+  background-color: $dark-blue;
+}
+
+.icon-link:active {
+  text-decoration: none;
+  fill: $color-link-hover;
+  background-color: $grey;
+}
+
+.icon-link:visited {
+  text-decoration: none;
+}
+
+.icon-grey {
+  fill: $grey;
+}
+
+.navigate {
+  @include rotate(0);
+  
+  transition: transform 0.5s;
+}
+
+.slide_1 .navigate {
+  @include rotate(180);
+}
+
+.slide_1.slide_2 .navigate {
+  @include rotate(90);
+}
+
+
+
+/* IE fixes Arrrrrrrrrrghhhhhhhhhhhhhhhhh */
+
+@media screen\0 {
+  * > .icon-small {
+    height: 24px;
+    width: 24px;
+  }
+  * > .icon-medium {
+    height: 56px;
+    width: 56px;
+  }
+}
+@media screen\9 {
+  * > .icon-small {
+    height: 24px;
+    width: 24px;
+  }
+  * > .icon-medium {
+    height: 56px;
+    width: 56px;
+  }
+}

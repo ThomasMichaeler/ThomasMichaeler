@@ -1,0 +1,92 @@
+
+.form-row {
+}
+
+.form-icon {
+  display: inline-block;
+  box-sizing: border-box;
+  width: $distance-e;
+  padding: 6px 0;
+  vertical-align: bottom;
+  border: 0 none;
+  background-color: transparent;
+  fill: $color-link;
+}
+
+.form-help {
+  text-align: left;
+  margin-left: $distance-f;
+}
+
+.form-center {
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+}
+
+form input, form select {
+  box-sizing: border-box;
+  width: 250px;
+  padding: $distance-a/2 0;
+  box-shadow: none;
+  border: 0 none;
+  border-bottom: 2px solid $color-border;
+  background-color: transparent;
+  color: $color-text;
+}
+
+form input:focus, form input.ng-valid, form select:focus, form select.ng-valid { 
+  border-color: $color-border-hover;
+  box-shadow: none;
+}
+
+form input.ng-invalid.ng-dirty, form select.ng-invalid.ng-dirty {
+  border-color: $red;
+  box-shadow: none;
+}
+
+form label {
+  color: $color-text;
+}
+
+form label.ng-valid {
+  color: $color-text;
+}
+
+form label.ng-invalid.ng-dirty {
+  color: $color-invalid;
+}
+
+form button {
+  display: inline;
+  padding: $distance-a 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: $color-button;
+}
+
+form button:hover, 
+form button:active {
+  color: $color-button-hover;
+}
+
+.form-dialog {
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin: 0 10%;
+  opacity: 1;
+
+  transition: opacity 0.5s;
+}
+
+.form-success {
+  background: $blue;
+}
+
+.form-error {
+  background: $red;
+  @include translateY(-100%);
+}

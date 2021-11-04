@@ -1,0 +1,33 @@
+// colors
+
+/*
+0 #FFFFFF //BG of layers
+50 #ECEFF0 //for dividers of same priority content
+900 #263238 //body bg and font color
+blue #549ECB //hover
+
+red #B94A48 //error
+
+$color-highlight
+$color-link
+
+$color-link-dark $color-link-light
+$color-text $color-text-light $color-text-lightest
+
+*/
+$darker-blue: #2C3E50;
+$dark-blue: #455B65;
+$blue: #51A5C3;
+$grey: #D7DADB;
+$red: #EF464C;
+
+$color-background: $darker-blue;
+$color-text: $grey;
+$color-link: $dark-blue;
+$color-link-hover: $darker-blue;
+$color-button: $blue;
+$color-button-hover: $grey;
+$color-border: $grey;
+$color-border-hover: $blue;
+
+$color-invalid: $red; 

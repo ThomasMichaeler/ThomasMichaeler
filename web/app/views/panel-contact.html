@@ -1,0 +1,34 @@
+<div class="vert-cell">
+  <div class="login">
+    <form class="form-signin" name="contactform" role="form" ng-submit="indexCtrl.sendcontact()" form-autofill-fix>
+      <div class="form-row">
+        <span class="form-icon">
+          <svg viewBox="0 0 100 100" class="icon-small icon-icon_email icon-grey">
+            <use xlink:href="#icon-icon_email"></use>
+          </svg>
+        </span>
+        <input id="contact-email" name="contact-email" class="text-subhead" type="email" placeholder="Email" ng-model="indexCtrl.contact.email" required="required">
+      </div>
+      <div class="form-row">
+        <label for="contact-email" class="text-caption">&nbsp;</label>
+      </div>
+      <div class="form-row">
+        <span class="form-icon">
+          <svg viewBox="0 0 100 100" class="icon-small icon-icon_message icon-grey">
+            <use xlink:href="#icon-icon_message"></use>
+          </svg>
+        </span>
+        <input id="contact-message" name="contact-message" class="text-subhead" type="text" placeholder="Message" ng-model="indexCtrl.contact.message" required="required">
+      </div>
+      <div class="form-row">
+        <label for="contact-message" class="text-caption">&nbsp;</label>
+      </div>
+      <div class="form-row">
+        <button class="text-button" type="submit">Send</button>
+      </div>
+    </form>
+    <div class="form-dialog form-success" ng-class="{'invisible': !indexCtrl.success}"><span class="text-subhead">Message sent successfully!</span></div>
+    <div class="form-dialog form-error" ng-class="{'invisible': !indexCtrl.error}"><span class="text-subhead">Message not sent!</span></div>
+    </div>
+  </div>
+</div>
